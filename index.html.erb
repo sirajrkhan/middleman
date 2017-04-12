@@ -1,6 +1,10 @@
 ---
 title: Mindtree Sample eCom Site
 heading: Our New Product Ranges
+menu_service:
+  - Brand New
+	- Web Apps
+	- Mobile Apps
 ---
 
 <div class="top-bar border-bottom margin-bottom">
@@ -12,9 +16,9 @@ heading: Our New Product Ranges
 		  <ul class="vertical menu" data-accordion-menu>
 		    <li><a href="#">SERVICES</a>
 		      <ul class="menu vertical nested">
-		        <li><a href="#">Brand</a></li>
-		        <li><a href="#">Web Apps</a></li>
-		        <li><a href="#">Mobile Apps</a></li>
+						<%= current_page.data.menu_service.each do |menu_item| %>
+		        <li><a href="#"><%= menu_item %></a></li>
+						<% end %>
 		       </ul>
 		    </li>
 		    <li><a href="#">PRODUCTS</a>
