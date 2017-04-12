@@ -12,10 +12,8 @@
   </head>
   <body>
     <%= yield %>
-
-      <%= javascript_include_tag "site" %>
-    <script>
-      $(document).foundation();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.js"></script>
+    <%= javascript_include_tag "site" %>
   </body>
 </html>
