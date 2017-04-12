@@ -17,7 +17,7 @@ menu_service:
 		  <ul class="vertical menu" data-accordion-menu>
 		    <li><a href="#">SERVICES</a>
 		      <ul class="menu vertical nested">
-						<%= current_page.data.menu_service.each do |menu_item| %>
+						<% current_page.data.menu_service.each do |menu_item| %>
 		        <li><a href="#"><%= menu_item %></a></li>
 						<% end %>
 		       </ul>
