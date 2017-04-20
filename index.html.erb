@@ -3,68 +3,70 @@ title: Mindtree Sample eCom Site
 heading: Our New Product Ranges
 menu_service:
   - Brand New
-  - ABC XYZ 1
   - Web Apps
   - Mobile Apps
 ---
 
 <div class="top-bar border-bottom margin-bottom">
-      <div class="top-bar-left">
-        <h4> Logo </h4>      </div>
-      <div class="top-bar-right">
-		<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
-		
-		  <ul class="vertical menu" data-accordion-menu>
-		    <li><a href="#">SERVICES</a>
-		      <ul class="menu vertical nested">
-						<% current_page.data.menu_service.each do |menu_item| %>
-		        <li><a href="#"><%= menu_item %></a></li>
-						<% end %>
-		       </ul>
-		    </li>
-		    <li><a href="#">PRODUCTS</a>
-		      <ul class="menu vertical nested">
-		        <li><a href="#">Product 1</a></li>
-		        <li><a href="#">Product 2</a></li>
-		        <li><a href="#">Product 3</a></li>
-		       </ul>
-		     </li>
-		    <li><a href="#">STOCKISTS</a>
-		      <ul class="menu vertical nested">
-		        <li><a href="#">London</a></li>
-		        <li><a href="#">New York</a></li>
-		        <li><a href="#">Paris</a></li>
-		       </ul>
-		    </li>
-		   </ul>
-		  <ul class="vertical menu">
-		    <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
-		    <li><a href="#">Login</a></li>
-		    <li><a href="#">Register</a></li>
-		    <li><a href="#">Pricing</a></li>
-		    <li><a href="#">Support</a></li>
-		  </ul>
-		  <ul class="vertical menu">
-		     <li><a href="#">Journal</a></li>
-		     <li><a href="#">FAQ</a></li>
-		     <li><a href="#">Terms & Conditions</a></li>
-		     <li><a href="#">Careers</a></li>
-		     <li><a href="#">Students</a></li>
-		   </ul>
-		  <ul class="menu simple social-links">
-		    <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-		          <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-		          <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-		          <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
-		  </ul>
-		</div>
-		
-		<div class="off-canvas-content" data-off-canvas-content>
-		  
-		        <ul class="menu">
-		          <li>
-		          <li>
-		            <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
+  <div class="top-bar-left">
+    <h4> Logo </h4>
+  </div>
+  <div class="top-bar-right">
+    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+      <ul class="vertical menu" data-accordion-menu>
+        <li><a href="#">SERVICES</a>
+          <ul class="menu vertical nested">
+            <% current_page.data.menu_service.each do |menu_item| %>
+              <li>
+                <a href="#">
+                  <%= menu_item %>
+                </a>
+              </li>
+              <% end %>
+          </ul>
+        </li>
+        <li><a href="#">PRODUCTS</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">Product 1</a></li>
+            <li><a href="#">Product 2</a></li>
+            <li><a href="#">Product 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">STOCKISTS</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">London</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Paris</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="vertical menu">
+        <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <ul class="vertical menu">
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Students</a></li>
+      </ul>
+      <ul class="menu simple social-links">
+        <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <ul class="menu">
+        <li>
+          <li>
+            <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
 		              <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
 		              <div class="hamburger">
 		                <span class="line"></span>
@@ -72,79 +74,85 @@ menu_service:
 		                <span class="line"></span>
 		              </div>
 		            </button>
-		          </li>
-		        </ul>
-		    
-		  
-		 
-		</div>      
-    
-</div>
-</div><div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="bymbh5-orbit">
-    <ul class="orbit-container" tabindex="0" style="height: 594px;">
-        <button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous Slide</span>◀</button>
-        <button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next Slide</span>▶</button>
+          </li>
+      </ul>
+    </div>
 
-        <li class="orbit-slide slide-out-left mui-leave mui-leave-active" data-slide="0">
-            <img src="./images/banner1.jpg" class="force-100pc-width" alt="Banner One">
-        </li>
-        <li class="orbit-slide" data-slide="2" style="position: relative;">
-        <li class="orbit-slide is-active slide-in-right mui-enter mui-enter-active" data-slide="1" style="position: absolute; top: 0px;">
-            <img src="./images/banner2.jpg" class="force-100pc-width" alt="Banner Two">
-        </li>
-        <li class="orbit-slide" data-slide="2" style="position: relative;">
-           <img src="./images/banner3.jpg" alt="Banner Three">
-        </li>
-        <li class="orbit-slide" data-slide="3" style="position: relative;">
-           <img src="./images/banner4.jpg" alt="Banner Four">
-        </li>
-    </ul>
-</div><div class="row column text-center">
-    <h2><%= current_page.data.heading %></h2>
-    <hr>
-</div><div class="column">
-        <img class="force-100pc-width" class="force-100pc-width" src="./images/video.jpg">
-	
-        <h5>Nulla At Nulla Justo, Eget</h5>
-        <p>$400</p>
-        <span class="button">
+  </div>
+</div>
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="bymbh5-orbit">
+  <ul class="orbit-container" tabindex="0" style="height: 594px;">
+    <button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous Slide</span>◀</button>
+    <button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next Slide</span>▶</button>
+
+    <li class="orbit-slide slide-out-left mui-leave mui-leave-active" data-slide="0">
+      <img src="./images/banner1.jpg" class="force-100pc-width" alt="Banner One">
+    </li>
+    <li class="orbit-slide" data-slide="2" style="position: relative;">
+      <li class="orbit-slide is-active slide-in-right mui-enter mui-enter-active" data-slide="1" style="position: absolute; top: 0px;">
+        <img src="./images/banner2.jpg" class="force-100pc-width" alt="Banner Two">
+      </li>
+      <li class="orbit-slide" data-slide="2" style="position: relative;">
+        <img src="./images/banner3.jpg" alt="Banner Three">
+      </li>
+      <li class="orbit-slide" data-slide="3" style="position: relative;">
+        <img src="./images/banner4.jpg" alt="Banner Four">
+      </li>
+  </ul>
+</div>
+<div class="row column text-center">
+  <h2>
+    <%= current_page.data.heading %>
+  </h2>
+  <hr>
+</div>
+<div class="column">
+  <img class="force-100pc-width" class="force-100pc-width" src="./images/video.jpg">
+
+  <h5>Nulla At Nulla Justo, Eget</h5>
+  <p>$400</p>
+  <span class="button">
         <a href="#">Buy</a>
         </span>
-      </div>
+</div>
 
-<hr /><div class="medium-4 columns">
-      <h4>Top Products</h4>
-        <div class="media-object">
-                  <div class="media-object-section">
-                    <img class="top-prod-thumb" src="./images/traff.jpg">
-                  </div>
-                  <div class="media-object-section">
-                    <h5>Nunc Eu Ullamcorper Orci</h5>
-                    <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-                  </div>
-                </div></div>
+<hr />
 <div class="medium-4 columns">
-      <h4>Top Products</h4>
-        <div class="media-object">
-                  <div class="media-object-section">
-                <img class="top-prod-thumb" src="./images/eshop.jpg">
-                  </div>
-                  <div class="media-object-section">
-                    <h5>Nunc Eu Ullamcorper Orci</h5>
-                    <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-                  </div>
-                </div></div>
+  <h4>Top Products</h4>
+  <div class="media-object">
+    <div class="media-object-section">
+      <img class="top-prod-thumb" src="./images/traff.jpg">
+    </div>
+    <div class="media-object-section">
+      <h5>Nunc Eu Ullamcorper Orci</h5>
+      <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+    </div>
+  </div>
+</div>
 <div class="medium-4 columns">
-      <h4>Top Products</h4>
-        <div class="media-object">
-                  <div class="media-object-section">
-                    <img class="top-prod-thumb" src="./images/traff.jpg">
-                  </div>
-                  <div class="media-object-section">
-                    <h5>Nunc Eu Ullamcorper Orci</h5>
-                    <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
-                  </div>
-                </div></div>
+  <h4>Top Products</h4>
+  <div class="media-object">
+    <div class="media-object-section">
+      <img class="top-prod-thumb" src="./images/eshop.jpg">
+    </div>
+    <div class="media-object-section">
+      <h5>Nunc Eu Ullamcorper Orci</h5>
+      <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+    </div>
+  </div>
+</div>
+<div class="medium-4 columns">
+  <h4>Top Products</h4>
+  <div class="media-object">
+    <div class="media-object-section">
+      <img class="top-prod-thumb" src="./images/traff.jpg">
+    </div>
+    <div class="media-object-section">
+      <h5>Nunc Eu Ullamcorper Orci</h5>
+      <p>Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque.</p>
+    </div>
+  </div>
+</div>
 
 <%= link_to(
   "Read Documentation",
