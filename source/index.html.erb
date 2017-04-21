@@ -29,20 +29,15 @@
             </a>
             <%
               if jMenu.Sub != 0
-              jMenu.Sub.each do |subMenu|
             %>
-            <ul class="menu vertical nested">
-                <li>
-                  <a href="<%= subMenu.Link %>" alt="<%= subMenu.Alt %>">
-                    <%= subMenu.Desc %>
-                  </a>
+              <ul class="menu vertical nested">
+                <li> Sublink</li>                  
               </ul>
               <%
                 end
-                end
               %>
                 </li>
-                <% end %>
+          <% end %>
 
                   <li><a href="#">PRODUCTS</a>
                     <ul class="menu vertical nested">
