@@ -1,3 +1,15 @@
 {
-    "main_menu": ["Industries","Services","Solutions"]
+    "main_menu": [{
+            title: 'About',
+            href: 'https://www.mindtree.com/about-us/',
+            alt: 'About Mindtree',
+            sub: null
+        },
+        {
+            title: 'Industries',
+            href: 'https://www.mindtree.com/industries',
+            alt: 'Industries We Operate in',
+            sub: null
+        }
+    ]
 }
