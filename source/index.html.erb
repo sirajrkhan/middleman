@@ -29,16 +29,8 @@ menu_service:
           </ul>
         </li>
 
-<!--{
-            title: 'About',
-            href: 'https://www.mindtree.com/about-us/',
-            alt: 'About Mindtree',
-            sub: null
-        },-->        
-    <% data.menufile.main_menu.each do |jMenu| %>        
-        <li><a href="<%= jMenu.href %>" alt="<%= jMenu.alt %>"> <%= jMenu.title %> </a>
-        
-        </li>
+    <% data.menufile.main_menu.each do |jMenu| %>
+        <li><a href="<%= jMenu.href %>" alt="<%= jMenu.alt %>"> <%= jMenu.title %> </a></li>
     <% end %>
 
         <!--<li><a href="#">PRODUCTS</a>
