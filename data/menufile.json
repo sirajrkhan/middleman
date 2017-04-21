@@ -1,3 +1,4 @@
 {
-    "main_menu": ["Industries","Banks","Corporate","Creative Agencies"]
+    "main_menu": ["Industries","Banks","Corporate","Creative Agencies"],
+    "nested_menu": ["Industries","Banks","Corporate","Creative Agencies"]
 }
