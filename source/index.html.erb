@@ -29,22 +29,56 @@ menu_service:
           </ul>
         </li>
 
-<!--    <% data.menufile.main_menu.each do |jMenu| %>
-        <li><a href="<%= jMenu.href %>" alt="<%= jMenu.alt %>"> <%= jMenu.title %> </a></li>
-    <% end %>
--->    <% data.menufile.main_menu.each do |jMenu| %>
+   <% data.menufile.main_menu.each do |jMenu| %>
         <li><a href="" alt="<%= jMenu %>"> <%= jMenu %> </a></li>
     <% end %>
 
-        <!--<li><a href="#">PRODUCTS</a>
+         <li><a href="#">PRODUCTS</a>
           <ul class="menu vertical nested">
             <li><a href="#">Product 1</a></li>
             <li><a href="#">Product 2</a></li>
             <li><a href="#">Product 3</a></li>
           </ul>
-        </li>-->
+        </li>
+      </ul>
+      <ul class="vertical menu">
+        <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <ul class="vertical menu">
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Students</a></li>
+      </ul>
+      <ul class="menu simple social-links">
+        <li><a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
       </ul>
     </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <ul class="menu">
+        <li>
+          <li>
+            <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
+		              <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
+		              <div class="hamburger">
+		                <span class="line"></span>
+		                <span class="line"></span>
+		                <span class="line"></span>
+		              </div>
+		            </button>
+          </li>
+      </ul>
+    </div>
+
   </div>
 <!--Menu Ends here-->
 </div>
