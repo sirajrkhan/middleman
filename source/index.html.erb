@@ -1,11 +1,4 @@
----
-title: Mindtree Sample eCom Site
-heading: Our New Product Ranges
-menu_service:
-  - Brand New
-  - Web Apps
-  - Mobile Apps
----
+--- title: Mindtree Sample eCom Site heading: Our New Product Ranges menu_service: - Brand New - Web Apps - Mobile Apps ---
 
 <!--Header Starts here-->
 <div class="top-bar border-bottom margin-bottom">
@@ -13,7 +6,7 @@ menu_service:
     <h4> Logo </h4>
   </div>
 
-<!--Menu Starts here-->
+  <!--Menu Starts here-->
   <div class="top-bar-right">
     <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
       <ul class="vertical menu" data-accordion-menu>
@@ -29,17 +22,35 @@ menu_service:
           </ul>
         </li>
 
-   <% data.menufile.nested_menu.each do |jMenu| %>
-        <li><a href="<%= jMenu.Link %>" alt="<%= jMenu.Alt %>"> <%= jMenu.Desc %> </a></li>
-    <% end %>
+        <% data.menufile.nested_menu.each do |jMenu| %>
+          <li>
+            <a href="<%= jMenu.Link %>" alt="<%= jMenu.Alt %>">
+              <%= jMenu.Desc %>
+            </a>
+            <%
+              if jMenu.Sub != 0
+              jMenu.Sub.each do |subMenu|
+            %>
+            <ul class="menu vertical nested">
+                <li>
+                  <a href="<%= subMenu.Link %>" alt="<%= subMenu.Alt %>">
+                    <%= subMenu.Desc %>
+                  </a>
+              </ul>
+              <%
+                end
+                end
+              %>
+                </li>
+                <% end %>
 
-         <li><a href="#">PRODUCTS</a>
-          <ul class="menu vertical nested">
-            <li><a href="#">Product 1</a></li>
-            <li><a href="#">Product 2</a></li>
-            <li><a href="#">Product 3</a></li>
-          </ul>
-        </li>
+                  <li><a href="#">PRODUCTS</a>
+                    <ul class="menu vertical nested">
+                      <li><a href="#">Product 1</a></li>
+                      <li><a href="#">Product 2</a></li>
+                      <li><a href="#">Product 3</a></li>
+                    </ul>
+                  </li>
       </ul>
       <ul class="vertical menu">
         <li class="off-canvas-menu-item"><a href="#">Tour</a></li>
@@ -80,7 +91,7 @@ menu_service:
     </div>
 
   </div>
-<!--Menu Ends here-->
+  <!--Menu Ends here-->
 </div>
 <!--Header Ends here-->
 
