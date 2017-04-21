@@ -30,7 +30,7 @@ menu_service:
         </li>
 
    <% data.menufile.nested_menu.each do |jMenu| %>
-        <li><a href="" alt=""> <%= jMenu.Desc %> </a></li>
+        <li><a href="<%= jMenu.Link %>" alt="<%= jMenu.Alt %>"> <%= jMenu.Desc %> </a></li>
     <% end %>
 
          <li><a href="#">PRODUCTS</a>
