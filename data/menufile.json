@@ -1,4 +1,14 @@
 {
-    "main_menu": ["Industries","Banks","Corporate","Creative Agencies"],
-    "nested_menu": ["Industries","Banks","Corporate","Creative Agencies"]
+    "main_menu": ["Industries", "Banks", "Corporate", "Creative Agencies"],
+    "nested_menu": [{
+            "Desc": "Domain Expertise",
+            "Link": "https://www.mindtree.com/about-us/",
+            "Alt": "Link for Domain Expertise"
+        },
+        {
+            "Desc": "Business Expertise",
+            "Link": "https://www.mindtree.com/about-us/",
+            "Alt": "Link for Biz Expertise"
+        }
+    ]
 }
