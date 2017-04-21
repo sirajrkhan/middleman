@@ -29,8 +29,11 @@ menu_service:
           </ul>
         </li>
 
-    <% data.menufile.main_menu.each do |jMenu| %>
+<!--    <% data.menufile.main_menu.each do |jMenu| %>
         <li><a href="<%= jMenu.href %>" alt="<%= jMenu.alt %>"> <%= jMenu.title %> </a></li>
+    <% end %>
+-->    <% data.menufile.main_menu.each do |jMenu| %>
+        <li><a href="" alt="<%= jMenu %>"> <%= jMenu %> </a></li>
     <% end %>
 
         <!--<li><a href="#">PRODUCTS</a>
