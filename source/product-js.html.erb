@@ -45,7 +45,7 @@
 <script>
 
   document.addEventListener("DOMContentLoaded", function(event) {
-    //console.log("DOM fully loaded and parsed");
+    console.log("DOM fully loaded and parsed");
 
     var PRODUCT_CONTENT_TYPE_ID = '2PqfXUJwE8qSYKuM0U6w8M'
     var container = document.getElementById('content')
@@ -119,6 +119,8 @@ function renderImage(image, slug) {
   }
 }
 </script>
+<script src="https://npmcdn.com/contentful@3.3.5/browser-dist/contentful.js"></script>
+<script src="https://npmcdn.com/marked@0.3.5/marked.min.js"></script>
 
 <%= link_to(
   "Home",
