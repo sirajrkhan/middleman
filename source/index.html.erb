@@ -34,12 +34,16 @@ menu_service:
             <a href="<%= jMenu.Link %>" alt="<%= jMenu.Alt %>">
               <%= jMenu.Desc %>
             </a>
-              <ul class="menu vertical nested">
-                <% jMenu.Sub.each do |subMenu| %>
-                <li> Sublink 1</li>                
-                <% end %>  
-              </ul>
+            <ul class="menu vertical nested">
+              <% jMenu.Sub.each do |subMenu| %>
+                <li>
+                  <a href="<%= subMenu.Link %>" alt="<%= subMenu.Alt %>">
+                    <%= subMenu.Desc %>
+                  </a>
                 </li>
+                <% end %>
+            </ul>
+            </li>
           <% end %>
 
                   <li><a href="#">PRODUCTS</a>
