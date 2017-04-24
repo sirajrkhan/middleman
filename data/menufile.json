@@ -1,18 +1,6 @@
 {
     "main_menu": ["Industries", "Banks", "Corporate", "Creative Agencies"],
     "nested_menu": [{
-            "Desc": "Domain Expertise",
-            "Link": "https://www.mindtree.com/about-us/",
-            "Alt": "Link for Domain Expertise",
-            "Sub": 0
-        },
-        {
-            "Desc": "Business Expertise",
-            "Link": "https://www.mindtree.com/about-us/",
-            "Alt": "Link for Biz Expertise",
-            "Sub": 0
-        },
-        {
             "Desc": "Multiple Expertise",
             "Link": "https://www.mindtree.com/about-us/",
             "Alt": "Link for Biz Expertise",
@@ -23,9 +11,15 @@
                     "Sub": 0
                 },
                 {
+                    "Desc": "PHP Expertise",
+                    "Link": "https://www.mindtree.com/about-us/",
+                    "Alt": "Link for PHP Expertise",
+                    "Sub": 0
+                },
+                {
                     "Desc": "Java Expertise",
                     "Link": "https://www.mindtree.com/about-us/",
-                    "Alt": "Link for Biz Expertise",
+                    "Alt": "Link for Java Expertise",
                     "Sub": 0
                 }
             ]

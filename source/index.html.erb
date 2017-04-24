@@ -1,4 +1,11 @@
---- title: Mindtree Sample eCom Site heading: Our New Product Ranges menu_service: - Brand New - Web Apps - Mobile Apps ---
+--- 
+title: Mindtree Sample eCom Site 
+heading: Our New Product Ranges 
+menu_service: 
+  - Native Apps 
+  - Web Apps 
+  - Mobile Apps
+---
 
 <!--Header Starts here-->
 <div class="top-bar border-bottom margin-bottom">
@@ -27,15 +34,11 @@
             <a href="<%= jMenu.Link %>" alt="<%= jMenu.Alt %>">
               <%= jMenu.Desc %>
             </a>
-            <%
-              if jMenu.Sub != 0
-            %>
               <ul class="menu vertical nested">
-                <li> Sublink</li>                  
+                <li> Sublink 1</li>                  
+                <li> Sublink 3</li>                  
+                <li> Sublink 5</li>                  
               </ul>
-              <%
-                end
-              %>
                 </li>
           <% end %>
 
