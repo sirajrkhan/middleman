@@ -35,9 +35,9 @@ menu_service:
               <%= jMenu.Desc %>
             </a>
               <ul class="menu vertical nested">
-                <li> Sublink 1</li>                  
-                <li> Sublink 3</li>                  
-                <li> Sublink 5</li>                  
+                <% jMenu.Sub.each do |subMenu| %>
+                <li> Sublink 1</li>                
+                <% end %>  
               </ul>
                 </li>
           <% end %>

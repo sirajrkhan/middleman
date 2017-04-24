@@ -23,6 +23,30 @@
                     "Sub": 0
                 }
             ]
+        },
+        {
+            "Desc": "Industries",
+            "Link": "https://www.mindtree.com/about-us/",
+            "Alt": "Link for Biz Industry",
+            "Sub": [{
+                    "Desc": ".NET Industry",
+                    "Link": "https://www.mindtree.com/about-us/",
+                    "Alt": "Link for Biz Industry",
+                    "Sub": 0
+                },
+                {
+                    "Desc": "PHP Industry",
+                    "Link": "https://www.mindtree.com/about-us/",
+                    "Alt": "Link for PHP Industry",
+                    "Sub": 0
+                },
+                {
+                    "Desc": "Java Industry",
+                    "Link": "https://www.mindtree.com/about-us/",
+                    "Alt": "Link for Java Industry",
+                    "Sub": 0
+                }
+            ]
         }
     ]
 }
