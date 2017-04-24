@@ -34,6 +34,7 @@ menu_service:
             <a href="<%= jMenu.Link %>" alt="<%= jMenu.Alt %>">
               <%= jMenu.Desc %>
             </a>
+            <% if jMenu.Sub != 0 %>
             <ul class="menu vertical nested">
               <% jMenu.Sub.each do |subMenu| %>
                 <li>
@@ -43,6 +44,7 @@ menu_service:
                 </li>
                 <% end %>
             </ul>
+            <% end %>
             </li>
           <% end %>
 
