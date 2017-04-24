@@ -5,13 +5,16 @@ menu_service:
   - Web Apps 
   - Mobile Apps
 ---
-
+<% 
+  $LOAD_PATH << '.'
+  require 'header.rb'
+%>
 <!--Header Starts here-->
 <div class="top-bar border-bottom margin-bottom">
   <div class="top-bar-left">
     <h4><a href="/">Logo</a></h4>
+  <% include heading_content %>
   </div>
-
   <!--Menu Starts here-->
   <div class="top-bar-right">
     <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
